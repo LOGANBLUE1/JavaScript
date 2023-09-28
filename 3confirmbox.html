@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" name="" id="" onclick= myfun() value="click me">
+
+    <script>
+        const myfun = () =>{
+            let userConfirm = confirm("Are you authorised ? ");
+            if(userConfirm){
+                window.open("https://www.linkedin.com/in/aditya-pareek-6a8960231/");
+                return true;
+            }
+            else{
+                document.write("You are not allowed.");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

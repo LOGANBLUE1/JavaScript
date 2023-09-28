@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let d = new Date();
+        let time = d.getTime();//shows time in millisecond since 1970
+        <!-- document.write(time); -->
+
+        let hour = d.getHours();
+        let minute = d.getMinutes();
+        let second = d.getSeconds();
+        document.write(hour + " : " + minute + " : " + second);
+    </script>
+</body>
+</html>

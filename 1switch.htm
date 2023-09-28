@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h3>Enter your choice</h3>
+    <ul>
+        <li>add</li>
+        <li>sub</li>
+        <li>mult</li>
+    </ul>
+
+    <form action="">
+        <input type="text" id="root">
+        <br>
+        <button onclick = myfun()>Click me</button>
+    </form>
+
+    <script>
+        const myfun = () => {
+            let scope = document.getElementById('root').value;
+            alert(scope);
+            switch(scope){
+                case 'add':
+                    document.write(30);
+                    break;
+                case 'sub':
+                    document.write(-10);
+                    break;
+                case 'mult':
+                    document.write(200);
+                    break;
+                default:
+                    document.write('none')
+            }
+        }
+    </script>
+</body>
+</html>
