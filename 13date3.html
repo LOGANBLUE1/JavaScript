@@ -5,7 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
+<body>  
+    <button onclick="clearInterval(clock)">click me</button>
+    <p id="root"></p>
+    <script>
+        let clock = setInterval(clockTiming, 1000);
+        function clockTiming(){// fat arrow doesn't work here
+            let d = new Date();
+            let time = d.toLocaleTimeString();
+        //    document.write(d); will continuously print new time
+            document.getElementById('root').innerHTML = time;
+        }
+
+    </script>
 </body>
 </html>

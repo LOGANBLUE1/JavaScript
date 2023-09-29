@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="clearInterval(d)">click me</button><!--if we click this before 3 sec alert won't show-->
+    <script>
+        let d = setTimeout(myfun,3000);
+        function myfun(){
+            alert("Welcome to my website")
+        }
+    </script>
+</body>
+</html>
