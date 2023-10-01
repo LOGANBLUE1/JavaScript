@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let startXpoint = 0;
+        let endXpoint = window.innerWidth;
+        let currentXpoint = 0;
+        let fraction;
+        const mouseMove = (event) => {
+            currentXpoint = event.clintX;
+            fractionX = currentXpoint / endXpoint; 
+            console.log(fractionX);
+        }
+
+        window.addEventListener('mousemove', mouseMove);
+    </script>
+</body>
+</html>
